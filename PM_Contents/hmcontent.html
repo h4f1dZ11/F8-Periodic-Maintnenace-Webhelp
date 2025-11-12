@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>F8/F9 Periodic Maintenance</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { font-size: 1em }
+       .heading1 { color: #000; text-decoration: none; }
+       .heading2 { color: #000; text-decoration: none; }
+       .heading3 { color: #000; text-decoration: none; }
+       .heading4 { color: #000; text-decoration: none; }
+       .heading5 { color: #000; text-decoration: none; }
+       .heading6 { color: #000; text-decoration: none; }
+
+       .hilight1 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight2 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight3 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight4 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight5 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight6 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }
+       /* TOC LIST CSS */
+
+       @media (pointer: coarse) {
+         body    { transform-origin: 0 0;
+		   transform:scale(1.25);
+		   max-width: 80%;
+       }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+   	   var hiTest = /^hilight/im,
+			parentScope = (parent.hmNavigationFrame);
+		if (parentScope) parent.currentNav("toc");
+		$("a[class^='heading']").on("click",function(event){
+			var doSwipe = (hiTest.test($(this).children("span").first().attr("class")) || false || (parentScope && !parent.hmBrowser.nonDeskTouch));
+			if (doSwipe && parentScope) {
+			window.parent.showNav("toggle");
+			}
+			});
+     });
+   </script>
+      <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="safety.html" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">Chapter 1 &nbsp; Safety</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="1-safety-precautions.html" target="hmcontent"><span class="heading2" id="s1.1" ondblclick="return dblclicked(this)">Safety Precautions</span></a>
+<ul id="ul1.1" style="list-style-type:none">
+<li class="heading3" id="i1.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.1" href="1_1-operators-checks.html" target="hmcontent"><span class="heading3" id="s1.1.1">Operators Checks</span></a>
+</li>
+<li class="heading3" id="i1.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.2" href="1_2-work-environment-checks.html" target="hmcontent"><span class="heading3" id="s1.1.2">Work Environment Checks</span></a>
+</li>
+<li class="heading3" id="i1.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.3" href="1_3-precautions-for-potential-.html" target="hmcontent"><span class="heading3" id="s1.1.3">Precautions for Potential Fire Hazards</span></a>
+</li>
+<li class="heading3" id="i1.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.4" href="1_4-confirmation-of-machine-st.html" target="hmcontent"><span class="heading3" id="s1.1.4">Confirmation of Machine Status</span></a>
+</li>
+<li class="heading3" id="i1.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.5" href="1_5-pre-operation-checks.html" target="hmcontent"><span class="heading3" id="s1.1.5">Pre-operation Checks</span></a>
+</li>
+<li class="heading3" id="i1.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.6" href="1_6-implementing-lock-out-and-.html" target="hmcontent"><span class="heading3" id="s1.1.6">Implementing Lock-out and Tag-out</span></a>
+</li>
+<li class="heading3" id="i1.1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.7" href="1_7-during-work.html" target="hmcontent"><span class="heading3" id="s1.1.7">During Work</span></a>
+</li>
+<li class="heading3" id="i1.1.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.8" href="1_8-handling-of-hazardous-and-.html" target="hmcontent"><span class="heading3" id="s1.1.8">Handling of Hazardous and Toxic Materials</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="2-warning-labels.html" target="hmcontent"><span class="heading2" id="s1.2" ondblclick="return dblclicked(this)">Warning Labels</span></a>
+<ul id="ul1.2" style="list-style-type:none">
+<li class="heading3" id="i1.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.1" href="2_1-signal-word-definitions.html" target="hmcontent"><span class="heading3" id="s1.2.1">Signal Word Definitions</span></a>
+</li>
+<li class="heading3" id="i1.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.2" href="2_2-using-warning-labels.html" target="hmcontent"><span class="heading3" id="s1.2.2">Using Warning Labels</span></a>
+</li>
+<li class="heading3" id="i1.2.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.3" href="2_3-information-contained-in-w.html" target="hmcontent"><span class="heading3" id="s1.2.3" ondblclick="return dblclicked(this)">Information Contained in Warning Labels</span></a>
+<ul id="ul1.2.3" style="list-style-type:none">
+<li class="heading4" id="i1.2.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.3.1" href="2_3_1-warning-labels-with-warn.html" target="hmcontent"><span class="heading4" id="s1.2.3.1">Warning Labels with Warning Text</span></a>
+</li>
+<li class="heading4" id="i1.2.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.3.2" href="2_3_2-warning-labels-with-warn.html" target="hmcontent"><span class="heading4" id="s1.2.3.2">Warning Labels with Warning Marks Only</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.2.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.4" href="2_4-warning-labels-locations.html" target="hmcontent"><span class="heading3" id="s1.2.4" ondblclick="return dblclicked(this)">Warning Labels Locations</span></a>
+<ul id="ul1.2.4" style="list-style-type:none">
+<li class="heading4" id="i1.2.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.4.1" href="2_4_1-warning-labels-locations.html" target="hmcontent"><span class="heading4" id="s1.2.4.1">Warning Labels Locations on Standard Machine</span></a>
+</li>
+<li class="heading4" id="i1.2.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.4.2" href="2_4_2-labels.html" target="hmcontent"><span class="heading4" id="s1.2.4.2">Labels</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="3-safety-devices_2.html" target="hmcontent"><span class="heading2" id="s1.3" ondblclick="return dblclicked(this)">Safety Devices</span></a>
+<ul id="ul1.3" style="list-style-type:none">
+<li class="heading3" id="i1.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.1" href="3_1-emergency-stop-switch_2.html" target="hmcontent"><span class="heading3" id="s1.3.1">Emergency Stop Switch</span></a>
+</li>
+<li class="heading3" id="i1.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.2" href="3_2-door-switch_2.html" target="hmcontent"><span class="heading3" id="s1.3.2">Door Switch</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.4" href="4-work-hazards_2.html" target="hmcontent"><span class="heading2" id="s1.4" ondblclick="return dblclicked(this)">Work Hazards</span></a>
+<ul id="ul1.4" style="list-style-type:none">
+<li class="heading3" id="i1.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.1" href="4_1-area-surrounding-machine_2.html" target="hmcontent"><span class="heading3" id="s1.4.1">Area Surrounding Machine</span></a>
+</li>
+<li class="heading3" id="i1.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.2" href="4_2-electrical-system_2.html" target="hmcontent"><span class="heading3" id="s1.4.2">Electrical System</span></a>
+</li>
+<li class="heading3" id="i1.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.3" href="4_4-inside-the-machining-chamb_2.html" target="hmcontent"><span class="heading3" id="s1.4.3">Inside the Machining Chamber</span></a>
+</li>
+<li class="heading3" id="i1.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.4" href="4_5-tool-magazine_2.html" target="hmcontent"><span class="heading3" id="s1.4.4">Tool Magazine</span></a>
+</li>
+<li class="heading3" id="i1.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.5" href="4_6-cutting-fluid-supply-unit__2.html" target="hmcontent"><span class="heading3" id="s1.4.5">Cutting Fluid Supply Unit/Chip Disposal Device/Cutting Fluid Temperature Controller/Dust Collector (Graphite Specifications)</span></a>
+</li>
+<li class="heading3" id="i1.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.6" href="4_7-spindle-lubricant-controll_2.html" target="hmcontent"><span class="heading3" id="s1.4.6">Spindle Lubricant Controller/Feed Axis Temperature Controller/Hydraulic Unit</span></a>
+</li>
+<li class="heading3" id="i1.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.7" href="4_8-pneumatic-unit_2.html" target="hmcontent"><span class="heading3" id="s1.4.7">Pneumatic Unit</span></a>
+</li>
+<li class="heading3" id="i1.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.8" href="4_9-splash-guard_2.html" target="hmcontent"><span class="heading3" id="s1.4.8">Splash Guard</span></a>
+</li>
+<li class="heading3" id="i1.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.9" href="4_10-other-peripheral-equipmen_2.html" target="hmcontent"><span class="heading3" id="s1.4.9">Other Peripheral Equipment</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.5" href="5-occupational-health-and-safe.html" target="hmcontent"><span class="heading2" id="s1.5" ondblclick="return dblclicked(this)">Occupational Health and Safety Management</span></a>
+<ul id="ul1.5" style="list-style-type:none">
+<li class="heading3" id="i1.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.5.1" href="5_1-safety-device-inspection.html" target="hmcontent"><span class="heading3" id="s1.5.1">Safety Device Inspection</span></a>
+</li>
+<li class="heading3" id="i1.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.5.2" href="5_2-noise.html" target="hmcontent"><span class="heading3" id="s1.5.2">Noise</span></a>
+</li>
+<li class="heading3" id="i1.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.5.3" href="5_3-personal-protective-equipm.html" target="hmcontent"><span class="heading3" id="s1.5.3">Personal Protective Equipment</span></a>
+</li>
+<li class="heading3" id="i1.5.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.5.4" href="5_4-disposal-of-waste-products.html" target="hmcontent"><span class="heading3" id="s1.5.4" ondblclick="return dblclicked(this)">Disposal of Waste Products</span></a>
+<ul id="ul1.5.4" style="list-style-type:none">
+<li class="heading4" id="i1.5.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.5.4.1" href="5_4_1-disposal-of-waste-oil_-w.html" target="hmcontent"><span class="heading4" id="s1.5.4.1">Disposal of Waste Oil, Waste Fluids and Waste Materials</span></a>
+</li>
+<li class="heading4" id="i1.5.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.5.4.2" href="5_4_2-disposal-of-this-machine.html" target="hmcontent"><span class="heading4" id="s1.5.4.2">Disposal of This Machine</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="chapter-2-periodic-maintenance.html" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Chapter 2 &nbsp; Periodic Maintenance</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="prior-to-performing-operation.html" target="hmcontent"><span class="heading2" id="s2.1">Prior to Performing Operation</span></a>
+</li>
+<li class="heading2" id="i2.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="periodic-maintenance-list.html" target="hmcontent"><span class="heading2" id="s2.2" ondblclick="return dblclicked(this)">Periodic Maintenance List</span></a>
+<ul id="ul2.2" style="list-style-type:none">
+<li class="heading3" id="i2.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.2.1" href="daily_pre-operation-inspection.html" target="hmcontent"><span class="heading3" id="s2.2.1">Daily/Pre-Operation Inspection/Maintenance</span></a>
+</li>
+<li class="heading3" id="i2.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.2.2" href="work-after-shutdown.html" target="hmcontent"><span class="heading3" id="s2.2.2">Work After Shutdown</span></a>
+</li>
+<li class="heading3" id="i2.2.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.2.3" href="maintenance-based-on-machine-r.html" target="hmcontent"><span class="heading3" id="s2.2.3" ondblclick="return dblclicked(this)">Maintenance Based on Machine Running Time Intervals</span></a>
+<ul id="ul2.2.3" style="list-style-type:none">
+<li class="heading4" id="i2.2.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.1" href="50-hours-(weekly)-maintenance.html" target="hmcontent"><span class="heading4" id="s2.2.3.1">50 hours (Weekly) Maintenance</span></a>
+</li>
+<li class="heading4" id="i2.2.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.2" href="500-hours-(2-months)-maintenan.html" target="hmcontent"><span class="heading4" id="s2.2.3.2">500 hours (2 months) Maintenance</span></a>
+</li>
+<li class="heading4" id="i2.2.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.3" href="1000-hours-(4-months)-maintena.html" target="hmcontent"><span class="heading4" id="s2.2.3.3">1000 hours (4 Months) Maintenance</span></a>
+</li>
+<li class="heading4" id="i2.2.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.4" href="2000-hours-(8-months)-maintena.html" target="hmcontent"><span class="heading4" id="s2.2.3.4">2000 hours (8 Months) Maintenance</span></a>
+</li>
+<li class="heading4" id="i2.2.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.5" href="2000-hours-(8-months)-maintena_2.html" target="hmcontent"><span class="heading4" id="s2.2.3.5">4000 hours (16 Months) Maintenance</span></a>
+</li>
+<li class="heading4" id="i2.2.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.2.3.6" href="6000-hours-maintenance.html" target="hmcontent"><span class="heading4" id="s2.2.3.6">6000 hours (2 Years) Maintenance</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="machine.html" target="hmcontent"><span class="heading2" id="s2.3" ondblclick="return dblclicked(this)">Machine</span></a>
+<ul id="ul2.3" style="list-style-type:none">
+<li class="heading3" id="i2.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.3.1" href="checking_adjusting-the-levelin.html" target="hmcontent"><span class="heading3" id="s2.3.1">Checking/Adjusting the Leveling of the Machine</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="spindle.html" target="hmcontent"><span class="heading2" id="s2.4" ondblclick="return dblclicked(this)">Spindle</span></a>
+<ul id="ul2.4" style="list-style-type:none">
+<li class="heading3" id="i2.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.4.1" href="cleaning-the-spindle-taper-sec.html" target="hmcontent"><span class="heading3" id="s2.4.1">Cleaning the Spindle Taper Section</span></a>
+</li>
+<li class="heading3" id="i2.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.4.2" href="inspecting_replacing-the-o-rin.html" target="hmcontent"><span class="heading3" id="s2.4.2" ondblclick="return dblclicked(this)">Checking/Replacement of Sleeve Coolant Seal</span></a>
+<ul id="ul2.4.2" style="list-style-type:none">
+<li class="heading4" id="i2.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.4.2.1" href="1063.html" target="hmcontent"><span class="heading4" id="s2.4.2.1">Checking the O Ring of the Sleeve</span></a>
+</li>
+<li class="heading4" id="i2.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.4.2.2" href="1064.html" target="hmcontent"><span class="heading4" id="s2.4.2.2">Replacing the O Ring for the Sleeve</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.4.3" href="273.html" target="hmcontent"><span class="heading3" id="s2.4.3">Greasing of Spindle Collet</span></a>
+</li>
+<li class="heading3" id="i2.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.4.4" href="replacement-of-spindle-rotary-.html" target="hmcontent"><span class="heading3" id="s2.4.4">Replacement of Spindle Rotary Union</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="tool-magazine.html" target="hmcontent"><span class="heading2" id="s2.5" ondblclick="return dblclicked(this)">Tool Magazine</span></a>
+<ul id="ul2.5" style="list-style-type:none">
+<li class="heading3" id="i2.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.5.1" href="1048.html" target="hmcontent"><span class="heading3" id="s2.5.1">Checking/Cleaning of Tool Shank</span></a>
+</li>
+<li class="heading3" id="i2.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.5.2" href="1270.html" target="hmcontent"><span class="heading3" id="s2.5.2">Checking/Cleaning Tool Pot Key of Tool Magazine</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="spindle-lubrication-temperatur.html" target="hmcontent"><span class="heading2" id="s2.6" ondblclick="return dblclicked(this)">Spindle and Feed Axis Temperature Controller</span></a>
+<ul id="ul2.6" style="list-style-type:none">
+<li class="heading3" id="i2.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.1" href="99.html" target="hmcontent"><span class="heading3" id="s2.6.1">Checking Oil Level and Refilling with Oil</span></a>
+</li>
+<li class="heading3" id="i2.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.2" href="98.html" target="hmcontent"><span class="heading3" id="s2.6.2">Cleaning the Air Filter and the Condenser</span></a>
+</li>
+<li class="heading3" id="i2.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.3" href="92.html" target="hmcontent"><span class="heading3" id="s2.6.3">Replacing the Lubricant Oil</span></a>
+</li>
+<li class="heading3" id="i2.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.4" href="93.html" target="hmcontent"><span class="heading3" id="s2.6.4">Replacing the Exhaust Cleaner Element (20K)</span></a>
+</li>
+<li class="heading3" id="i2.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.5" href="97.html" target="hmcontent"><span class="heading3" id="s2.6.5">Replacing the Line Filter Element (20K)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="automatic-grease-supply-unit.html" target="hmcontent"><span class="heading2" id="s2.7" ondblclick="return dblclicked(this)">Automatic Grease Supply Unit</span></a>
+<ul id="ul2.7" style="list-style-type:none">
+<li class="heading3" id="i2.7.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.1" href="1057.html" target="hmcontent"><span class="heading3" id="s2.7.1">Replacing the Grease Cartridge</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="hydraulic-unit.html" target="hmcontent"><span class="heading2" id="s2.8" ondblclick="return dblclicked(this)">Hydraulic Unit</span></a>
+<ul id="ul2.8" style="list-style-type:none">
+<li class="heading3" id="i2.8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.1" href="200.html" target="hmcontent"><span class="heading3" id="s2.8.1">Checking Oil Level and Refilling with Oil</span></a>
+</li>
+<li class="heading3" id="i2.8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.2" href="202.html" target="hmcontent"><span class="heading3" id="s2.8.2">Replacing the Hydraulic Oil</span></a>
+</li>
+<li class="heading3" id="i2.8.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.3" href="204.html" target="hmcontent"><span class="heading3" id="s2.8.3">Cleaning the Hydraulic Unit Filter Element</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="pneumatic-system.html" target="hmcontent"><span class="heading2" id="s2.9" ondblclick="return dblclicked(this)">Pneumatic System</span></a>
+<ul id="ul2.9" style="list-style-type:none">
+<li class="heading3" id="i2.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.1" href="1204.html" target="hmcontent"><span class="heading3" id="s2.9.1">Checking and Adjusting the Pressure of the Air Regulator</span></a>
+</li>
+<li class="heading3" id="i2.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.2" href="1234.html" target="hmcontent"><span class="heading3" id="s2.9.2">Checking for Clogging of the Mist Separator</span></a>
+</li>
+<li class="heading3" id="i2.9.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.3" href="69.html" target="hmcontent"><span class="heading3" id="s2.9.3">Replacing the Mist Separator Filter&nbsp;</span></a>
+</li>
+<li class="heading3" id="i2.9.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.4" href="1257.html" target="hmcontent"><span class="heading3" id="s2.9.4">Replacing the Main Air Unit Filter</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="chip-disposal_cutting-fluid-su.html" target="hmcontent"><span class="heading2" id="s2.10" ondblclick="return dblclicked(this)">Chip Disposal/Cutting Fluid Supply Unit</span></a>
+<ul id="ul2.10" style="list-style-type:none">
+<li class="heading3" id="i2.10.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.1" href="chip-disposal_cutting-fluid-s2.html" target="hmcontent"><span class="heading3" id="s2.10.1" ondblclick="return dblclicked(this)">Chip Disposal (Standard)</span></a>
+<ul id="ul2.10.1" style="list-style-type:none">
+<li class="heading4" id="i2.10.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.1.1" href="1214.html" target="hmcontent"><span class="heading4" id="s2.10.1.1">Manual Chip Disposal from Chip Bucket</span></a>
+</li>
+<li class="heading4" id="i2.10.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.1.2" href="replacement-of-mesh-filter.html" target="hmcontent"><span class="heading4" id="s2.10.1.2">Replacement of Mesh Filter</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.10.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.2" href="checking_replenishment-of-cutt.html" target="hmcontent"><span class="heading3" id="s2.10.2" ondblclick="return dblclicked(this)">Checking/Replenishment of Cutting Fluid Level</span></a>
+<ul id="ul2.10.2" style="list-style-type:none">
+<li class="heading4" id="i2.10.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.2.1" href="70.html" target="hmcontent"><span class="heading4" id="s2.10.2.1">Checking of Cutting Fluid Level</span></a>
+</li>
+<li class="heading4" id="i2.10.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.2.2" href="replenishment-of-cutting-fluid.html" target="hmcontent"><span class="heading4" id="s2.10.2.2">Replenishment of Cutting Fluid</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.10.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.3" href="cleaning-of-cutting-fluid-temp.html" target="hmcontent"><span class="heading3" id="s2.10.3" ondblclick="return dblclicked(this)">Cleaning of Cutting Fluid Temperature Controller Air Filter and Condenser (Option)</span></a>
+<ul id="ul2.10.3" style="list-style-type:none">
+<li class="heading4" id="i2.10.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.3.1" href="cleaning-of-cutting-fluid-temp_2.html" target="hmcontent"><span class="heading4" id="s2.10.3.1">Cleaning of Cutting Fluid Temperature Controller Air Filter and Condenser</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.10.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.4" href="checking_cleaning-of-cyclone-f.html" target="hmcontent"><span class="heading3" id="s2.10.4" ondblclick="return dblclicked(this)">Checking/Cleaning of Cyclone Filter (Option)</span></a>
+<ul id="ul2.10.4" style="list-style-type:none">
+<li class="heading4" id="i2.10.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.4.1" href="checking-of-cyclone-filter-inl.html" target="hmcontent"><span class="heading4" id="s2.10.4.1">Checking of Cyclone Filter Inlet Pressure</span></a>
+</li>
+<li class="heading4" id="i2.10.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.4.2" href="cleaning-of-cyclone-filter-buc.html" target="hmcontent"><span class="heading4" id="s2.10.4.2">Cleaning of Cyclone Filter Bucket</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.10.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.5" href="cleaning-of-coolant-tank.html" target="hmcontent"><span class="heading3" id="s2.10.5" ondblclick="return dblclicked(this)">Cleaning of Coolant Tank</span></a>
+<ul id="ul2.10.5" style="list-style-type:none">
+<li class="heading4" id="i2.10.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.5.1" href="72.html" target="hmcontent"><span class="heading4" id="s2.10.5.1">Cleaning of Coolant Clean Tank</span></a>
+</li>
+<li class="heading4" id="i2.10.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a2.10.5.2" href="1130.html" target="hmcontent"><span class="heading4" id="s2.10.5.2">Special Cleaning for Coolant Tank</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.10.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.6" href="cleaning-of-coolant-pumps.html" target="hmcontent"><span class="heading3" id="s2.10.6">Cleaning of Coolant Pumps</span></a>
+</li>
+<li class="heading3" id="i2.10.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.7" href="replacement-of-pump-mechancial.html" target="hmcontent"><span class="heading3" id="s2.10.7">Replacement of Pump Mechanical Seal Kit</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="air-dryer.html" target="hmcontent"><span class="heading2" id="s2.11" ondblclick="return dblclicked(this)">Air Dryer</span></a>
+<ul id="ul2.11" style="list-style-type:none">
+<li class="heading3" id="i2.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.11.1" href="1007.html" target="hmcontent"><span class="heading3" id="s2.11.1">Checking of Evaporation Thermometer</span></a>
+</li>
+<li class="heading3" id="i2.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.11.2" href="1008.html" target="hmcontent"><span class="heading3" id="s2.11.2">Cleaning of Ventilation Grill</span></a>
+</li>
+<li class="heading3" id="i2.11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.11.3" href="1006.html" target="hmcontent"><span class="heading3" id="s2.11.3">Cleaning/Replacement of Auto Drain Strainer</span></a>
+</li>
+<li class="heading3" id="i2.11.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.11.4" href="1005.html" target="hmcontent"><span class="heading3" id="s2.11.4">Replacement of Air Filter</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="machine-controller.html" target="hmcontent"><span class="heading2" id="s2.12" ondblclick="return dblclicked(this)">Machine Controller</span></a>
+<ul id="ul2.12" style="list-style-type:none">
+<li class="heading3" id="i2.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.12.1" href="64.html" target="hmcontent"><span class="heading3" id="s2.12.1">Cleaning the Filter for the Cooling Fan</span></a>
+</li>
+<li class="heading3" id="i2.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.12.2" href="1029.html" target="hmcontent"><span class="heading3" id="s2.12.2">Replacing the Absolute Pulse Coder/Scale Batteries</span></a>
+</li>
+<li class="heading3" id="i2.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.12.3" href="1028.html" target="hmcontent"><span class="heading3" id="s2.12.3">Replacing the NC Backup Battery</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

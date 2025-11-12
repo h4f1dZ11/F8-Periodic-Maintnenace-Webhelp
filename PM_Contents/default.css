@@ -1,0 +1,334 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 15px;
+ font-family: Arial,Helvetica,sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_1_11mm /* 1_11mm */
+{
+}
+span.f_1_11mm /* 1+_11mm */
+{
+}
+span.f_Bodybullet /* Body bullet */
+{
+}
+span.f_BodyE /* Body E */
+{
+}
+span.f_Body_E_11mm_procedure /* Body_E_11mm_procedure */
+{
+}
+span.f_Body_E_12mm /* Body_E_12mm */
+{
+ font-size: 16px;
+ font-family: 'Arabic Transparent';
+}
+span.f_Cell_Safety /* Cell_Safety */
+{
+ font-size: 13px;
+ font-weight: bold;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 11px;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_FigureE /* Figure E */
+{
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 27px;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 27px;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 21px;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Heading4 /* Heading4 */
+{
+ font-size: 16px;
+ color: #ffffff;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 11px;
+ font-weight: bold;
+}
+span.f_Notes /* Notes */
+{
+ font-size: 13px;
+ color: #231f20;
+ background-color: #ffffff;
+}
+span.f_TablefontWarning_1 /* Table font Warning_1 */
+{
+ font-size: 13px;
+ font-weight: bold;
+}
+span.f_TablefontWarning_2 /* Table font Warning_2 */
+{
+ font-size: 13px;
+ font-weight: bold;
+}
+span.f_TablefontWarning_3 /* Table font Warning_3 */
+{
+ font-size: 13px;
+ font-weight: bold;
+}
+span.f_TableFont_Center_10mm /* Table Font_Center_10mm */
+{
+ font-size: 13px;
+}
+span.f_Tablefont_Header /* Table font_Header */
+{
+ font-size: 13px;
+}
+span.f_TableFont_Left /* Table Font_Left */
+{
+ font-size: 13px;
+}
+span.f_Title1 /* Title1 */
+{
+ font-size: 27px;
+ font-family: SimHei;
+ font-weight: bold;
+}
+span.f_Warning_bold_1 /* Warning_bold_1 */
+{
+ font-weight: bold;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_1_11mm /* 1_11mm */
+{
+ font-size: 15px;
+ text-indent: -26px;
+ line-height: 1.42;
+ margin: 6px 0 0 74px;
+}
+.p_1_11mm /* 1+_11mm */
+{
+ font-size: 15px;
+ text-indent: -26px;
+ line-height: 1.42;
+ margin: 6px 0 0 74px;
+}
+.p_Bodybullet /* Body bullet */
+{
+ font-size: 15px;
+ text-align: justify;
+ text-indent: -12px;
+ line-height: 1.42;
+ margin: 6px 0 0 86px;
+}
+.p_BodyE /* Body E */
+{
+ font-size: 15px;
+ text-align: justify;
+ text-indent: -27px;
+ margin: 8px 0 8px 75px;
+}
+.p_Body_E_11mm_procedure /* Body_E_11mm_procedure */
+{
+ font-size: 15px;
+ margin: 0 0 11px 48px;
+}
+.p_Body_E_12mm /* Body_E_12mm */
+{
+ font-size: 16px;
+ margin: 8px 0 8px 0;
+}
+.p_Cell_Safety /* Cell_Safety */
+{
+ font-size: 13px;
+ text-align: justify;
+ line-height: 1.42;
+ margin: 4px 4px 4px 7px;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 11px;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+}
+.p_Comment /* Comment */
+{
+ font-size: 15px;
+}
+.p_FigureE /* Figure E */
+{
+ font-size: 15px;
+ text-align: center;
+ margin: 0 0 8px 0;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: center;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading2 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading3 /* Heading3 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading4 /* Heading4 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 11px;
+}
+.p_Notes /* Notes */
+{
+ font-size: 13px;
+ margin: 0 0 8px 0;
+}
+.p_TablefontWarning_1 /* Table font Warning_1 */
+{
+ font-size: 13px;
+ text-indent: -11px;
+ line-height: 1.30;
+ margin: 4px 4px 0 11px;
+}
+.p_TablefontWarning_2 /* Table font Warning_2 */
+{
+ font-size: 13px;
+ text-indent: -11px;
+ line-height: 1.30;
+ margin: 4px 4px 0 11px;
+}
+.p_TablefontWarning_3 /* Table font Warning_3 */
+{
+ font-size: 13px;
+ text-indent: -11px;
+ line-height: 1.30;
+ margin: 4px 4px 4px 11px;
+}
+.p_TableFont_Center_10mm /* Table Font_Center_10mm */
+{
+ font-size: 13px;
+ text-align: center;
+ line-height: 1.42;
+ margin: 4px 0 4px 0;
+}
+.p_Tablefont_Header /* Table font_Header */
+{
+ font-size: 13px;
+ text-align: center;
+ margin: 3px 0 3px 0;
+}
+.p_TableFont_Left /* Table Font_Left */
+{
+ font-size: 13px;
+ line-height: 1.42;
+ margin: 0 0 0 4px;
+}
+.p_Title1 /* Title1 */
+{
+ font-size: 27px;
+ text-align: center;
+}
+.p_Warning_bold_1 /* Warning_bold_1 */
+{
+ font-size: 15px;
+ text-align: center;
+ margin: 2px 0 4px 0;
+}
+/* Table styles */
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
